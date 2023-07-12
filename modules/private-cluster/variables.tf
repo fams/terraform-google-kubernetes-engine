@@ -499,3 +499,11 @@ variable "timeouts" {
     error_message = "Only create, update, delete timeouts can be specified."
   }
 }
+
+#### HACK
+
+variable "enable_l4_ilb_subsetting" {
+  type = bool
+  description = "Enable L4 internal loadbalance subsetting"
+  default = false
+}
