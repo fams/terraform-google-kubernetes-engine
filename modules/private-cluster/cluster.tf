@@ -115,6 +115,7 @@ resource "google_container_cluster" "primary" {
       enabled = var.filestore_csi_driver
     }
   }
+  enable_l4_ilb_subsetting = true
 
   datapath_provider = var.datapath_provider
 
